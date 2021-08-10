@@ -63,5 +63,7 @@ def PlotPulsosSD(offsetDC=offsetDC_0,A=0.5*A_0,f=f_0,phi=phi_0,ids="xuvey"):
     plt.xlim(0,1/f_0)
     plt.grid()
     plt.legend(loc=(1.01,0.75))
+
+    fig.tight_layout()
     plt.show()
 
