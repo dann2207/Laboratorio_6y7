@@ -49,7 +49,7 @@ def PlotPulsosSD(offsetDC=offsetDC_0,A=0.5*A_0,f=f_0,phi=phi_0,ids="xuvey"):
     print("OVERLOADING: nos fuimos del rango X_FS del cuantizador {} veces".format(N_overload))
     print("A={}, f={}, phi={}".format(A,f,phi))
 
-    plt.figure(figsize=(10, 3))
+    fig = plt.figure(figsize=(10, 3))
 
     if 'x' in ids: plt.plot(t,x,label='x',color="navy",linewidth=3,zorder=10)
     if 'u' in ids: plt.plot(t,u,label='u')
